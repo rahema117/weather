@@ -1,0 +1,123 @@
+
+:root{
+    --main-font:"Roboto", sans-serif;
+}
+body{
+    font-family: var(--main-font);
+}
+.container{
+    width: 70%;
+}
+.navbar{
+    background-color: #1E202B;
+
+}
+h1{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--main-font);
+    
+    
+}
+.logo span{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: var(--main-font);
+  
+ 
+}
+.navbar .nav-item .nav-link{
+font-size: 14px;
+font-weight: 500;
+margin: 0px 15px;
+padding: 5px 28px;
+border: solid 2px transparent;
+ border-radius: 20px;
+
+}
+.navbar .nav-item .nav-link:hover{
+    color: #009AD8;
+    border: solid 2px #009AD8;
+    border-radius: 20px;
+}
+.navbar .nav-item .active{
+    color: #009AD8;
+    border: solid 2px #009AD8;
+    border-radius: 20px;
+  
+}
+.hero{
+   
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2) , rgba(0, 0, 0, 0.2) ),url(../images/banner.png);
+    height: 50vh;
+}
+input{
+    background-color: #1E202B;
+    border: none;
+    color: white;
+}
+
+.forcast-content{
+   
+    padding: 10px 20px;
+}
+.forcast{
+    background-color: #1E202B;
+}
+.subscripe{
+    background-color:#262936 ;
+}
+.subscripe span{
+    display:block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1E202B;
+    color: #009AD8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px transparent;
+    margin: 0px 5px;
+    transition: all 1s;
+    cursor: pointer;
+}
+.subscripe span:hover{
+    background-color: #009AD8;
+    border: solid 1px #1E202B;
+    color: white;
+}
+.div .btn{
+    top: 7px;
+    right: 7px;
+}
+.div2 .btn{
+    top: 7px;
+    right: 7px;
+}
+.degree .num{
+    font-size: 60px;
+    font-weight: 700;
+}
+.custom{
+    color: #009AD8;
+    margin: 30px 0px;
+}
+.icon{
+    margin: 20px 0px;
+}
+.find{
+    transform: translateY(-300px)
+}
+.cards{
+    transform: translateY(-250px);
+}
+
+ .card1{
+    background-color: #262936;
+ }  
+ .card2{
+    background-color: #323544;
+ }

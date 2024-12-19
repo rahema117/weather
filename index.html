@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark py-4">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo@2x.png" alt="" width="64" height="38">
+        <div class="logo mx-2 ">
+          <h1 class="mb-0">Weather</h1>
+          <span>taglines goes here</span>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class="hero">
+  </div>
+  <div class="forcast">
+
+    <div class="container ">
+      <div class="div position-relative w-100  find">
+        <input type="text" class="w-100 rounded-pill p-3 " placeholder="find your location....." id="foundCountry">
+        <button class="btn btn-info position-absolute rounded-pill px-4 py-2 text-white">Find</button>
+      </div>
+      <div class="row text-white g-0 rounded-4  overflow-hidden cards" id="demo">
+        <div class="col-md-6 col-lg-4">
+          <div class="item h-100">
+            <div class="forcast-header p-2 d-flex justify-content-between" style="background-color: #2D303D;">
+              <div class="day" id="currentDay">Tuesday</div>
+              <div class="date" id="currentMonth">17December</div>
+
+
+            </div>
+            <div class="forcast-content" style="background-color: #323544;">
+              <h3 id="regionName">cairo</h3>
+              <div class="degree">
+                <div class="num">
+                  <span id="currentDegree">18</span>
+                  <sup>o</sup>
+                  c
+                </div>
+                <div class="icon">
+                  <img src="images/logo@2x.png" alt="" width="90" id="currentIcon">
+                </div>
+
+              </div>
+              <div class="custom" id="currentStauts">
+                partly cloudly
+              </div>
+
+              <img src="images/icon-umberella.png" alt="" width="20px"> <span id="humadity">20%</span>
+              <img src="images/icon-wind.png" alt="" width="20px"> <span id="wind">18km/h</span>
+              <img src="images/icon-compass.png" alt="" width="20px" id="direction"><span>East</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 card-days card1">
+          <div class="item text-center h-100" style="background-color: #262936;">
+            <div class="forcast-header p-2" style="background-color: #222530;">
+              <div class="day">
+                Wednesday
+              </div>
+            </div>
+            <div class="forcast-content py-5">
+              <div class="icon">
+                <img src="images/logo@2x.png" alt="" width="90">
+              </div>
+              <div class="degree fs-4 fw-bold">
+                21.4
+                <sup>o</sup>
+                c
+              </div>
+              <span>12.4o</span>
+              <div class="custom">
+                Sunny
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 card-days card2">
+          <div class="item text-center h-100" style="background-color: #323544;">
+            <div class="forcast-header p-2" style="background-color: #2D303D;">
+              <div class="day">
+                Wednesday
+              </div>
+            </div>
+            <div class="forcast-content py-5">
+              <div class="icon">
+                <img src="images/logo@2x.png" alt="" width="90">
+              </div>
+              <div class="degree fs-4 fw-bold">
+                21.4
+                <sup>o</sup>
+                c
+              </div>
+              <span>12.4o</span>
+              <div class="custom">
+                Sunny
+              </div>
+
+            </div>
+          </div>
+        </div> 
+
+      </div>
+
+    </div>
+  </div>
+  <div class="subscripe">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-md-8">
+          <div class="div2 position-relative">
+            <input type="email" class="w-100 rounded-pill p-3 " placeholder="Enter your email subscribe.........">
+            <button class="btn btn-info position-absolute rounded-pill px-4 py-2 text-white">subscribe</button>
+          </div>
+        </div>
+        <div class="col-md-4  d-flex my-2">
+          <span><i class="fa-brands fa-facebook-f"></i></span>
+          <span><i class="fa-brands fa-twitter"></i></span>
+          <span><i class="fa-brands fa-google-plus-g"></i></span>
+          <span><i class="fa-brands fa-pinterest"></i></span>
+        </div>
+      </div>
+      <p class="text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </div>
+
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/maim.js"></script>
+</body>
+
+</html>
